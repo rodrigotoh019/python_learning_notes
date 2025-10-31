@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Python (in case you add scripts later)
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code or other IDE settings
+.vscode/
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
