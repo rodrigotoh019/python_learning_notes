@@ -38,7 +38,7 @@ This folder of notes is constantly evolving. It's not perfect, and that's intent
 
 If you're learning Python too, feel free to connect, share feedback, or just say hi!
 
-📧 [rodrigotoh019@gmail.com](mailto:rodrigotoh019@gmail.com)
+📧 [rodrigotoh019@gmail.com](rodrigotoh019@gmail.com)
 🌐 [LinkedIn – Rodrigo Toh](https://www.linkedin.com/in/rodrigo-toh-1443331a6/)
 
 ---
