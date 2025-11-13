@@ -187,7 +187,7 @@ students = (("Alice", 95), ("Bob", 80))
 zip(names, grades)
 ```
 
-* Returns iterable of tuples: `[("Alice", 95), ...]`
+* Returns iterable of tuples: `[('Alice', 95), ...]`
 
 ---
 
@@ -213,7 +213,6 @@ finally:
 
 * Use `Label()` to display text/images
 * `.pack()`, `.grid()`, `.place()` = geometry managers
-* Load custom fonts with `tkFont.Font(file=path, size=32)`
 * Use `PhotoImage()` to load and display logos/images
 * `text=""` is a placeholder until the value is updated programmatically
 
@@ -230,5 +229,14 @@ for key, value in dict.items():
 
 * Use `*value` to unpack lists of unknown length
 * Often used in loading data like fonts or student grades
+
+---
+
+## 22. Importing Modules
+
+* `import module` to load a full module
+* `import module as alias` for cleaner code (e.g., `import numpy as np`)
+* `from module import item` to bring in just what you need
+* Use aliases for standard packages (`tk`, `np`, `pd`, etc.)
 
 ---
