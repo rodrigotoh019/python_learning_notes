@@ -34,7 +34,8 @@ Each topic is saved in its own Markdown file (`.md`) for easier browsing, refere
 * Error Handling
 * Tkinter GUI Concepts
 * Dictionaries
-* **Importing Modules** ← *New!*
+* Importing Modules
+* **Understanding with and open()** ← *New!*
 
 And more topics are coming as I continue learning!
 
