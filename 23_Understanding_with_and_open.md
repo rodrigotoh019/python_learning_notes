@@ -28,9 +28,9 @@ with open(CONFIG_FILE, "r") as f:
 The `with` statement automatically **closes the file** when the code block finishes. Without it, forgetting to use `close()` can cause problems:
 
 * The opened file **consumes system memory** (file handles)
-* **Risk of data loss** — changes might stay in the buffer, not written to disk
-* **Memory leaks** — file stays open, wasting resources
-* **Security risks** — file remains accessible longer than needed
+* **Risk of data loss** - changes might stay in the buffer, not written to disk
+* **Memory leaks** - file stays open, wasting resources
+* **Security risks** - file remains accessible longer than needed
 
 ✅ With `with`, the file automatically closes when the block ends. Around 90% of file operations use `with`. Manual control may still be better in some advanced cases.
 
@@ -40,16 +40,16 @@ The `with` statement automatically **closes the file** when the code block finis
 
 **Common modes:**
 
-* `"r"` — Read mode (default)
-* `"w"` — Write mode (creates or overwrites file)
-* `"a"` — Append mode (adds to file)
+* `"r"` - Read mode (default)
+* `"w"` - Write mode (creates or overwrites file)
+* `"a"` - Append mode (adds to file)
 
 **Advanced modes:**
 
-* `"r+"` — Read and write
-* `"w+"` — Write and read
-* `"a+"` — Append and read
-* `"rb"`, `"wb"`, `"ab"` — Binary file modes (for images, audio, etc.)
+* `"r+"` - Read and write
+* `"w+"` - Write and read
+* `"a+"` - Append and read
+* `"rb"`, `"wb"`, `"ab"` - Binary file modes (for images, audio, etc.)
 
 📌 In our example, `"r"` means we're reading the `CONFIG_FILE`. If the file doesn't exist, Python raises a `FileNotFoundError` (not `IOError`). You can handle this with `try`/`except`, which we’ll cover in future notes.
 
@@ -70,7 +70,7 @@ f = with open(CONFIG_FILE, "r")
 with open(CONFIG_FILE, "r") as f:
 ```
 
-* `f` is just a variable — you can name it anything: `file`, `data_file`, `config`, etc.
+* `f` is just a variable - you can name it anything: `file`, `data_file`, `config`, etc.
 * Python developers often use `f` as shorthand for "file".
 * Once assigned, you can call methods like `f.read()`, `f.write()`, `f.close()` (though you don’t need `close()` here).
 
