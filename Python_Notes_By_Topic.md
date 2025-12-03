@@ -240,3 +240,36 @@ for key, value in dict.items():
 * Use aliases for standard packages (`tk`, `np`, `pd`, etc.)
 
 ---
+## 23. Understanding `with` and `open()`
+
+**`with`** is a Python statement that works with context managers to automatically handle setup and cleanup. **`open()`** is a built-in function that opens files.
+
+**Basic Syntax:**
+```python
+with open("file.txt", "r") as f:
+    data = f.read()
+```
+
+**Common File Modes:**
+- `"r"` - Read mode
+- `"w"` - Write mode (creates or overwrites)
+- `"a"` - Append mode
+
+**Why use `with`:** Automatically closes files when done, preventing memory leaks and data loss. No need to manually call `f.close()`.
+
+**The `as f` part:** Assigns the file object to a variable (can be any name, `f` is standard for "file").
+
+**Remember:** ~90% of file operations use `with` for safety. Only use manual `open()` and `close()` when files need to stay open across multiple operations.
+
+--- 
+## 24. JSON (JavaScript Object Notation)
+
+A lightweight, human-readable format for storing and exchanging data between programs. Works like Python dictionaries but saved as text files.
+
+**Key Functions:**
+- `json.dump(data, file)` - Save Python data to JSON file
+- `json.load(file)` - Read JSON file into Python
+
+**Common Use:** Saving app settings, user preferences, and program data that needs to persist between sessions.
+
+**Remember:** Always use `indent=4` for readability. Never store passwords or sensitive data in plain JSON files.
